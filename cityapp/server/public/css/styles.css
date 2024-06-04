@@ -1,0 +1,158 @@
+
+
+#stores-page{
+    
+}
+
+#mymap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#map-container {
+    position: relative;
+    padding-top: 40px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+#img-map {
+    width: 100%;
+    height: auto; 
+    border-radius: 20px;
+    width: 1300px; 
+}
+
+
+.pinpoint {
+    
+    width: auto; 
+    height: 50px; 
+    cursor: pointer;
+}
+
+.pinpoint:hover{ 
+    animation: hoverAnimation 0.2s forwards;
+    z-index: 10;
+}
+
+@keyframes hoverAnimation {
+    to {
+        transform: scale(1.2); 
+        opacity: 1;
+   }
+}
+
+#img-map {
+
+}
+
+#stores-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.store-detail-container{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(51 51 51);
+}
+
+#stores-container{
+    display: flex;
+    justify-content: center;
+}
+
+.store{
+    display: flex;
+}
+
+.store-img{
+    height: 500px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.store-img-list{
+    height: 200px;
+    max-width: 60%;
+    border-radius: 20px;
+}
+
+
+.double-column {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-row-gap: 40px;
+}
+
+.store-image {
+    width: 300px;
+}
+
+.store-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.store-url{
+    width: 150px; 
+    text-align: center; 
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    background-color: rgb(51 51 51);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.store-url:hover{
+    background-color: rgb(78, 78, 78);
+}
+
+.show-all-btn{
+    position: absolute; 
+    top: 10%; 
+    right: 2%;
+    width: 100px; 
+    text-align: center; 
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 25px;
+    border: 2px solid rgb(51 51 51);
+    background-color: rgba(51, 51, 51, 0.08);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: background-color 0.2s;
+}
+
+.show-all-btn:hover{
+    background-color: rgba(51, 51, 51, 0.18);
+
+
+}

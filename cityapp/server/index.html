@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jönköping City</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+
+<div id="root">
+    <header class="nav-container">
+        <div id="brand-name">JKPGCITY</div>
+        <nav id="main-nav" class="main-nav">
+            <a href="/" onclick="route()">Home</a>
+            <a href="/login" onclick="route()">Login</a>
+            <a href="/stores" onclick="route()">Stores</a>
+            <a href="/register" onclick="route()">Register</a>
+
+           
+
+        </nav>
+       
+        <button id="burger-menu" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    
+    <div id="burger-menu-items" class="burger-menu-items">
+        <a href="/contact" onclick="route()">Contact Us</a>
+        
+    </div>
+    <main id="main-page">
+     
+    </main>
+</div>
+
+<script src="/js/router.js"></script>
+<script src="/js/menu.js"></script>
+<script src="/js/login.js"></script>
+<script src="/js/logout.js"></script>
+<script src="/js/register.js"></script>
+<script src="/js/editStore.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+.centered-image {
+    width: 100%;
+    height: auto; 
+    max-height: 500px; 
+    opacity: 0.5;
+    max-width: 100%; 
+    margin: auto;
+    display: block; 
+}
+
+.scrolling-text-container {
+    width: 100vw; 
+    overflow: hidden;
+    position: relative; 
+    height: 100px; 
+}
+
+.floating-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollText 20s linear infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #333;
+    line-height: 3;
+    width: fit-content;
+  
+    right: -100%;
+}
+.Jönköping {
+    color: red; 
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100vw); 
+    }
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .floating-text {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-text {
+        font-size: 16px;
+    }
+}

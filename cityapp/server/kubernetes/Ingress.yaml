@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+  namespace: labb-v1
+  annotations:
+  nginx.ingress.kubernetes.io/ssl-redirect: 'false'
+spec:
+  rules:
+  - host: localhost
+    http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: cityapp-service
+            port:
+              number: 3000
